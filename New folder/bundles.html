@@ -1,0 +1,739 @@
+<!----------------------------NAVIAGTION------------------------>
+<!DOCTYPE html> 
+<html>
+<head>
+<title>Bundles</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<!----------------------PERSONAL STYLESHEETS----------------------->
+<link rel="stylesheet" href="style.css">
+<!----------------------PERSONAL STYLESHEETS----------------------->
+<!----------------ONLINE STYLESHEETS AND SCRIPTS------------------>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">    
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<!----------------ONLINE STYLESHEETS AND SCRIPTS------------------> 
+</head>
+<button onclick="topFunction()" id="topbtn" title="Back to top">Top</button>
+<script>
+mybutton = document.getElementById("topbtn");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.documentElement.scrollTop = 0;
+}
+    </script>
+<body>
+<div class="top-nav-bar">
+<div class="search-bar">
+<a href="index.html"><img src="logo.png" class="logo"></a>
+<input type="text" class="form-control" placeholder="Search Store..." style="font-style: italic">    
+<span class="input-group-text"><i class="fa fa-search" style="color: #9900FF;font-size: 20px;"></i></span>  
+    
+</div>
+<div class="menu">
+<ul>    
+<li><a href="#"><i class="fa fa-question-circle"></i></a></li>    
+<li><a href="#"><i class="fa fa-heart"></i></a></li>
+<li><a href="#"><i class="fa fa-user"></i></a>
+<div class="topsubmenu">
+<ul>
+<li><a href="login.html">Sign In</a></li>    
+<li><a href="signup.html">Create an Account</a></li>    
+</ul>    
+</div>    
+</li>  
+<li style="background-color: black"><a href="#"><i class="fa fa-shopping-cart" style="color: #9900FF"></i></a></li>  
+</ul>
+</div>    
+</div> 
+<!---------------------DEFAULT MENU------------------------------->
+<div class="menueasyclose">  
+    <div class="wrapper">
+        <nav id="sidemenubar">
+            <div id="close">
+                <i class="fa fa-arrow-left"></i>
+            </div>
+            <div class="sidemenubar-header">
+                <h3><a href="index.html">Imtiaz's <br>Website</a></h3>
+            </div>
+            <ul class="list-unstyled components">
+                <p>MENU</p>
+                <li class="active">
+                    <a href="#clothesSubmenu" data-toggle="collapse" aria-expanded="false">Clothing</a>
+                    <ul class="collapse list-unstyled" id="clothesSubmenu">
+                        <li>
+                            <a href="#">Tops</a>
+                        </li>
+                        <li>
+                            <a href="#">Hoodies</a>
+                        </li>
+                        <li>
+                            <a href="#">Cosplay</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#accSubmenu" data-toggle="collapse" aria-expanded="false">Accessories</a>
+                    <ul class="collapse list-unstyled" id="accSubmenu">
+                        <li>
+                            <a href="#">Rings</a>
+                        </li>
+                        <li>
+                            <a href="#">Bracelets</a>
+                        </li>
+                        <li>
+                            <a href="#">Necklaces</a>
+                        </li>                        
+                        <li>
+                            <a href="#">Keyrings</a>
+                        </li>                        
+                        <li>
+                            <a href="#">Hats</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#figuresSubmenu" data-toggle="collapse" aria-expanded="false">Figures</a>
+                    <ul class="collapse list-unstyled" id="figuresSubmenu">
+                        <li>
+                            <a href="#">Scale Figures</a>
+                        </li>
+                        <li>
+                            <a href="#">Plush</a>
+                        </li>
+                        <li>
+                            <a href="#">Chibi & mini figures</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#artSubmenu" data-toggle="collapse" aria-expanded="false">Art Prints</a>
+                    <ul class="collapse list-unstyled" id="artSubmenu">
+                        <li>
+                            <a href="#">Posters</a>
+                        </li>
+                        <li>
+                            <a href="#">Stickers</a>
+                        </li>
+                        <li>
+                            <a href="#">Pictures & canvases</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#bedSubmenu" data-toggle="collapse" aria-expanded="false">Bedding</a>
+                    <ul class="collapse list-unstyled" id="bedSubmenu">
+                        <li>
+                            <a href="#">Duvet Covers</a>
+                        </li>
+                        <li>
+                            <a href="#">Pillows</a>
+                        </li>
+                        <li>
+                            <a href="#">Sets</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#seriesSubmenu" data-toggle="collapse" aria-expanded="false">Series</a>
+                    <ul class="collapse list-unstyled" id="seriesSubmenu">
+                        <li>
+                            <a href="seriesall.html">View All</a>
+                        </li>
+                        <li>
+                            <a href="#aSubmenu" data-toggle="collapse" aria-expanded="false">A-D</a>
+                            <ul class="collapse list-unstyled" id="aSubmenu" style="margin-left:20px;background-color: #9900FF; font-size:13px;">
+                            <li>
+                                <a href="#">Attack on Titans</a>
+                            </li>
+                            <li>
+                                <a href="#">Black Butler</a>
+                            </li> 
+                            <li>
+                                <a href="#">Black Clover</a>
+                            </li> 
+                            <li>
+                                <a href="#">Bleach</a>
+                            </li>    
+                            <li>
+                                <a href="#">Code Geass</a>
+                            </li>                            
+                            <li>
+                                <a href="#">Dan Machi</a>
+                            </li>                            
+                            <li>
+                                <a href="#">Darling in the Franxx</a>
+                            </li>                              
+                            <li>
+                                <a href="#">Date a Live</a>
+                            </li>                            
+                            <li>
+                                <a href="#">Deathnote</a>
+                            </li>                             
+                            <li>
+                                <a href="#">Demon Slayer</a>
+                            </li>                             
+                            <li>
+                                <a href="#">Dragonball Z</a>
+                            </li>                                
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#eSubmenu" data-toggle="collapse" aria-expanded="false">E-L</a>
+                            <ul class="collapse list-unstyled" id="eSubmenu" style="margin-left:20px;background-color: #9900FF; font-size:13px;">
+                            <li>
+                                <a href="#">Fairy Tail</a>
+                            </li>
+                            <li>
+                                <a href="#">Fire Force</a>
+                            </li> 
+                            <li>
+                                <a href="#">Fullmetal Alchemist</a>
+                            </li> 
+                            <li>
+                                <a href="#">Gate</a>
+                            </li>    
+                            <li>
+                                <a href="#">Hataraku Maou-Sama</a>
+                            </li>                            
+                            <li>
+                                <a href="#">High School DxD</a>
+                            </li>                            
+                            <li>
+                                <a href="#">High School of thr Dead</a>
+                            </li>                              
+                            <li>
+                                <a href="#">Hunter X Hunter</a>
+                            </li>                            
+                            <li>
+                                <a href="#">Konosuba</a>
+                            </li>                             
+                            <li>
+                                <a href="#">Log Horizon</a>
+                            </li>                                                     </ul>
+                        </li>
+                        <li>
+                            <a href="#mSubmenu" data-toggle="collapse" aria-expanded="false">M-S</a>
+                            <ul class="collapse list-unstyled" id="mSubmenu" style="margin-left:20px;background-color: #9900FF; font-size:13px;">
+                            <li>
+                                <a href="#">Magi</a>
+                            </li>
+                            <li>
+                                <a href="#">Mob Psycho 100</a>
+                            </li> 
+                            <li>
+                                <a href="#">My Hero Academia</a>
+                            </li> 
+                            <li>
+                                <a href="#">No Game No Life</a>
+                            </li>    
+                            <li>
+                                <a href="#">Noragami</a>
+                            </li>                            
+                            <li>
+                                <a href="#">One Piece</a>
+                            </li>                            
+                            <li>
+                                <a href="#">One Piece Man</a>
+                            </li>                              
+                            <li>
+                                <a href="#">Re:Zero</a>
+                            </li>                            
+                            <li>
+                                <a href="#">Re:Life</a>
+                            </li>                             
+                            <li>
+                                <a href="#">Shokugeki no Soma</a>
+                            </li>                             
+                            <li>
+                                <a href="#">Sword Art Online</a>
+                            </li>                                
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#tSubmenu" data-toggle="collapse" aria-expanded="false">T-Z</a>
+                            <ul class="collapse list-unstyled" id="tSubmenu" style="margin-left:20px;background-color: #9900FF; font-size:13px;">
+                            <li>
+                                <a href="#">Terra Formars</a>
+                            </li>
+                            <li>
+                                <a href="#">That Time I got reincarnated as a Slime</a>
+                            </li> 
+                            <li>
+                                <a href="#">The Asterisk War</a>
+                            </li> 
+                            <li>
+                                <a href="#">The Rising of the Shield Hero</a>
+                            </li>    
+                            <li>
+                                <a href="#">The Seven Deadly Sins</a>
+                            </li>                            
+                            <li>
+                                <a href="#">Tokyo Ghouls</a>
+                            </li>                                                            
+                            </ul>
+                        </li>                        
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#otherSubmenu" data-toggle="collapse" aria-expanded="false">Other</a>
+                    <ul class="collapse list-unstyled" id="otherSubmenu">
+                        <li>
+                            <a href="#">Games</a>
+                        </li>
+                        <li>
+                            <a href="#">Bags</a>
+                        </li>
+                        <li>
+                            <a href="#">Mousepads</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#saleSubmenu" data-toggle="collapse" aria-expanded="false">Sale</a>
+                    <ul class="collapse list-unstyled" id="saleSubmenu">
+                        <li>
+                            <a href="sale.html">View All</a>
+                        </li>
+                        <li>
+                            <a href="#">Clothes</a>
+                        </li>
+                        <li>
+                            <a href="#">Figures</a>
+                        </li>
+                    </ul>
+                </li> 
+                <img src="menu1.jpg" style="width: 248px; height: auto; margin-left: 1px;border-radius: 24px;border: 1px solid #fff;">               
+            </ul>
+        </nav>
+        <div id="content"> 
+            <nav class="navbar">
+                <div class="container" style="background-color: #9900FF;margin-top: 5px;margin-left: -30px;width:auto;height: auto;border-radius: 12px">
+                    <button type="button" id="sidemenubarCollapse" class="btn btn-info" style="background-color: #9900FF;border: none">
+                        <i class="fa fa-bars"></i>
+                        <span>Menu</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <script>
+        $(document).ready(function () {
+            $("#sidemenubar").mCustomScrollbar({
+                theme: "minimal"
+            });
+            $('#close, .overlay').on('click', function () {
+                $('#sidemenubar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+            $('#sidemenubarCollapse').on('click', function () {
+                $('#sidemenubar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>  
+<br></div>
+<!--------------------------------PAGE--------------------------->
+<div class="bundlesimage">
+<div class="container">
+<div class="row">
+<div class="col-xl-12">
+<img src="bundles01.png">
+</div>    
+</div>    
+</div>        
+</div>   
+<!---------------------------DEMON SLAYER BUNDLE--------------------------------->
+<section class="dbundles">
+<div class="container" style="display:flex;flex-direction:column;">
+<div class="row">
+<div class="product-card3"> 
+<div class="product-top1"> 
+<img id="img3-1" src="image3-1.jpg" alt="Tanjiro Figurine" style="width:175px;max-width:100%;" title="Tanjiro Figurine"> 
+<div id="modal3-1" class="modal">    
+<span class="close3-1">&times;</span>
+<img class="modal-content3" id="img03-1">
+<div id="caption3-1"></div>
+</div>    
+</div>    
+</div>      
+<div class="product-card3"> 
+<div class="product-top1"> 
+<img id="img3-2" src="image3-2.jpg" alt="Nezuko Figurine" style="width:175px;max-width:100%;" title="Nezuko Figurine">  
+<div id="modal3-2" class="modal">    
+<span class="close3-2">&times;</span>
+<img class="modal-content3" id="img03-2">
+<div id="caption3-2"></div>    
+</div>   
+</div>
+</div>    
+<div class="product-card3"> 
+<div class="product-top1"> 
+<img id="img3-3" src="image3-3.jpg" alt="Nezuko Nendoroid" style="width:175px;max-width:100%;" title="Nezuko Nendoroid"> 
+<div id="modal3-3" class="modal">    
+<span class="close3-3">&times;</span>
+<img class="modal-content3" id="img03-3">
+<div id="caption3-3"></div>    
+</div>    
+</div>
+</div>    
+<div class="product-card3"> 
+<div class="product-top1"> 
+<img id="img3-4" src="image3-4.jpg" alt="Tanjiro Nendoroid" style="width:175px;max-width:100%;" title="Tanjiro Nendoroid">   
+<div id="modal3-4" class="modal">    
+<span class="close3-4">&times;</span>
+<img class="modal-content3" id="img03-4">
+<div id="caption3-4"></div>    
+</div>    
+</div>
+</div>    
+<div class="product-card3"> 
+<div class="product-top1"> 
+<img id="img3-5" src="image3-5.jpg" alt="Tanjiro & Nezuko Nendoroid" style="width:175px;max-width:100%;" title="Tanjiro & Nezuko Nendoroid">   
+<div id="modal3-5" class="modal">    
+<span class="close3-5">&times;</span>
+<img class="modal-content3" id="img03-5">
+<div id="caption3-5"></div>    
+</div>    
+</div>    
+</div>
+<div class="product-card3">    
+<div class="product-top1">     
+    <p style="background-color:#00FF99;border-radius: 12px;"><b>Purchase this brand new <a href="image3.html">Demon Slayer Bundle</a> which gives you 6 items at a discounted price. This set comes with Tanjiro and his sister Nezuko in three different styles each to satisfy your needs.Usually these items would cost more altogether, however if you buy this bundle then there is a huge discount.</b></p>    
+  
+</div>    
+</div>    
+</div>    
+</div>   
+<div class="dbundles-scripts">    
+<script>
+    //IMAGE1 ENLARGEMENT
+    var modal = document.getElementById("modal3-1");
+    var img = document.getElementById("img3-1");
+    var modalImg = document.getElementById("img03-1");
+    var captionText = document.getElementById("caption3-1");
+    img.onclick = function()
+    {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    var span = document.getElementsByClassName("close3-1")[0]; 
+    span.onclick = function() 
+    {
+        modal.style.display = "none";
+    }
+    </script>     
+<script>
+    //IMAGE1 ENLARGEMENT
+    var modal = document.getElementById("modal3-2");
+    var img = document.getElementById("img3-2");
+    var modalImg = document.getElementById("img03-2");
+    var captionText = document.getElementById("caption3-2");
+    img.onclick = function()
+    {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    var span = document.getElementsByClassName("close3-2")[0]; 
+    span.onclick = function() 
+    {
+        modal.style.display = "none";
+    }
+    </script>   
+<script>
+    //IMAGE1 ENLARGEMENT
+    var modal = document.getElementById("modal3-3");
+    var img = document.getElementById("img3-3");
+    var modalImg = document.getElementById("img03-3");
+    var captionText = document.getElementById("caption3-3");
+    img.onclick = function()
+    {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    var span = document.getElementsByClassName("close3-3")[0]; 
+    span.onclick = function() 
+    {
+        modal.style.display = "none";
+    }
+    </script>     
+<script>
+    //IMAGE1 ENLARGEMENT
+    var modal = document.getElementById("modal3-4");
+    var img = document.getElementById("img3-4");
+    var modalImg = document.getElementById("img03-4");
+    var captionText = document.getElementById("caption3-4");
+    img.onclick = function()
+    {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    var span = document.getElementsByClassName("close3-4")[0]; 
+    span.onclick = function() 
+    {
+        modal.style.display = "none";
+    }
+    </script>
+<script>
+    //IMAGE1 ENLARGEMENT
+    var modal = document.getElementById("modal3-5");
+    var img = document.getElementById("img3-5");
+    var modalImg = document.getElementById("img03-5");
+    var captionText = document.getElementById("caption3-5");
+    img.onclick = function()
+    {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    var span = document.getElementsByClassName("close3-5")[0]; 
+    span.onclick = function() 
+    {
+        modal.style.display = "none";
+    }
+    </script>          
+</div>    
+</section>    
+<!---------------------------DEMON SLAYER BUNDLE--------------------------------->
+<!---------------------------GUILTY CROWN BUNDLE--------------------------------->
+<section class="gcbundles">
+<div class="container" style="display:flex;flex-direction:column;">
+<div class="row">
+<div class="product-card3">
+<div class="product-top1">
+<img id="img26-1" src="image26.jpg" alt="Guilty Crown Boxset Bundle" style="width: 350px; max-width: 100%;" title="
+Guilty Crown Boxset Bundle
+">    
+<div id="modal26-1" class="modal1">    
+<span class="close26-1">&times;</span>
+<img class="modal-content26" id="img026-1">
+<div id="caption26-1"></div>
+</div>      
+</div>    
+</div>
+<div class="product-card3">
+<div class="product-top1">
+<img id="img26-1-2" src="image26-1.jpg" alt="Guilty Crown Boxset Bundle" style="width: 350px; max-width: 100%;" title="
+Guilty Crown Boxset Bundle
+">
+<div id="modal26-1-2" class="modal1">    
+<span class="close26-1-2">&times;</span>
+<img class="modal-content26" id="img026-1-2">
+<div id="caption26-1-2"></div>
+</div>      
+</div>    
+</div>
+<div class="product-card">
+<div class="product-top">
+    <p style="background-color:#00FF99;border-radius: 12px;"><b>Get the entire <a href="image26.html">Guilty Crown Boxset</a>, with some additional goodies that will only be avaible to you. These include; Episode Commentary, a Guilty Crown 4 Panel Theater, Episode Previews, Promotional Videos, Songs/Soundtracks and an 'Into the Void' - where you go behind the scenes and get interviews by the directors etc.</b></p> 
+</div>    
+</div>    
+</div>
+</div>
+<div class="gcbundles-scripts">
+<script>
+    var modal1 = document.getElementById("modal26-1");
+    var img = document.getElementById("img26-1");
+    var modal1Img = document.getElementById("img026-1");
+    var captionText = document.getElementById("caption26-1");
+    img.onclick = function()
+    {
+        modal1.style.display = "block";
+        modal1Img.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    var span = document.getElementsByClassName("close26-1")[0]; 
+    span.onclick = function() 
+    {
+        modal1.style.display = "none";
+    }
+</script>
+<script>
+    var modal1 = document.getElementById("modal26-1-2");
+    var img = document.getElementById("img26-1-2");
+    var modal1Img = document.getElementById("img026-1-2");
+    var captionText = document.getElementById("caption26-1-2");
+    img.onclick = function()
+    {
+        modal1.style.display = "block";
+        modal1Img.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    var span = document.getElementsByClassName("close26-1-2")[0]; 
+    span.onclick = function() 
+    {
+        modal1.style.display = "none";
+    }
+</script>    
+</div>    
+</section>   
+<!---------------------------GUILTY CROWN BUNDLE--------------------------------->
+<!---------------------------SLIME DETTA BUNDLE---------------------------------> 
+<section class="sbundles">
+<div class="container" style="display:flex;flex-direction:column;">
+<div class="row">
+<div class="product-card3">
+<div class="product-top1">
+<img id="img31" src="image31.png" alt="Rimuru Figure" style="width:200px;max-width:100%;" title="Rimuru Figure">   
+<div id="modal31" class="modal2">    
+<span class="close31">&times;</span>
+<img class="modal-content3" id="img031">
+<div id="caption31"></div>    
+</div>    
+</div>    
+</div>   
+<div class="product-card3">
+<div class="product-top1">
+<img id="img31-1" src="image31-1.png" alt="Slime Detta Ken Top" style="width:200px;max-width:100%;" title="Slime Detta Ken Top">   
+<div id="modal31-1" class="modal2">    
+<span class="close31-1">&times;</span>
+<img class="modal-content3" id="img031-1">
+<div id="caption31-1"></div>    
+</div>    
+</div>    
+</div>   
+<div class="product-card3">
+<div class="product-top1">
+<img id="img31-2" src="image31-2.png" alt="Slime Detta Ken keychains" style="width:200px;max-width:100%;" title="Slime Detta Ken keychains">   
+<div id="modal31-2" class="modal2">    
+<span class="close31-2">&times;</span>
+<img class="modal-content3" id="img031-2">
+<div id="caption31-2"></div>    
+</div>    
+</div>    
+</div>   
+<div class="product-card3">
+<div class="product-top1">
+<img id="img31-3" src="image31-3.png" alt="Veldora Tempest Figure" style="width:200px;max-width:100%;" title="Veldora Tempest Figure">   
+<div id="modal31-3" class="modal2">    
+<span class="close31-3">&times;</span>
+<img class="modal-content3" id="img031-3">
+<div id="caption31-3"></div>    
+</div>    
+</div>    
+</div> 
+<div class="product-card3">
+<div class="product-top1">
+<p style="background-color:#00FF99;border-radius: 12px;"><b>Grab two figurines in this new bundle of <a href="#">That Time I got reincarnated as a Slime.</a> It comes with Rimuru (~8") and Veldora Tempest (~6"), which be released apporximately in April in 2020, purchase this bundle to be guaranteed a pre-order. It also comes with a t-shirt and several keyrings</b></p>    
+</div>    
+</div>    
+</div>    
+</div>
+<div class="sbundles-scripts">
+<script>
+    var modal2 = document.getElementById("modal31");
+    var img = document.getElementById("img31");
+    var modal2Img = document.getElementById("img031");
+    var captionText = document.getElementById("caption31");
+    img.onclick = function()
+    {
+        modal2.style.display = "block";
+        modal2Img.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    var span = document.getElementsByClassName("close31")[0]; 
+    span.onclick = function() 
+    {
+        modal2.style.display = "none";
+    }
+</script>   
+<script>
+    var modal2 = document.getElementById("modal31-1");
+    var img = document.getElementById("img31-1");
+    var modal2Img = document.getElementById("img031-1");
+    var captionText = document.getElementById("caption31-1");
+    img.onclick = function()
+    {
+        modal2.style.display = "block";
+        modal2Img.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    var span = document.getElementsByClassName("close31-1")[0]; 
+    span.onclick = function() 
+    {
+        modal2.style.display = "none";
+    }
+</script> 
+<script>
+    var modal2 = document.getElementById("modal31-2");
+    var img = document.getElementById("img31-2");
+    var modal2Img = document.getElementById("img031-2");
+    var captionText = document.getElementById("caption31-2");
+    img.onclick = function()
+    {
+        modal2.style.display = "block";
+        modal2Img.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    var span = document.getElementsByClassName("close31-2")[0]; 
+    span.onclick = function() 
+    {
+        modal2.style.display = "none";
+    }
+</script>   
+<script>
+    var modal2 = document.getElementById("modal31-3");
+    var img = document.getElementById("img31-3");
+    var modal2Img = document.getElementById("img031-3");
+    var captionText = document.getElementById("caption31-3");
+    img.onclick = function()
+    {
+        modal2.style.display = "block";
+        modal2Img.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    var span = document.getElementsByClassName("close31-3")[0]; 
+    span.onclick = function() 
+    {
+        modal2.style.display = "none";
+    }
+</script>     
+</div>    
+</section>    
+<!---------------------------SLIME DETTA BUNDLE--------------------------------->    
+<!----------------------------------FOOTER------------------------>
+<section class="footer">
+    <div class="container tex-center">
+    <div class="row">
+    <div class="col-xl-4">
+    <h1>Useful Links</h1>
+    <p>Privacy Policy</p>
+    <p>Term of Use</p>
+    <p>Return Policy</p>
+    </div>
+    <div class="col-xl-4">
+    <h1>Company</h1>
+    <p>About Us</p>
+    <p>Contact us</p>
+    <p>Careers</p>
+    </div>
+    <div class="col-xl-4">
+    <h1>Follow Us On</h1>
+    <p><i class="fa fa-twitter"></i>Twitter</p>
+    <p><i class="fa fa-facebook-official"></i>Facebook</p>
+    <p><i class="fa fa-instagram"></i>Instagram</p>
+    </div>
+    </div>    
+    </div>
+</section>      
+</body>
+</html>

@@ -1,0 +1,592 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title>Black Clover</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<!----------------------PERSONAL STYLESHEETS----------------------->
+<link rel="stylesheet" href="style.css">
+<!----------------------PERSONAL STYLESHEETS----------------------->
+<!----------------ONLINE STYLESHEETS AND SCRIPTS------------------>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">    
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<!----------------ONLINE STYLESHEETS AND SCRIPTS------------------> 
+</head>
+<body>
+<button onclick="topFunction()" id="topbtn" title="Go to top">Top</button>
+<script>
+mybutton = document.getElementById("topbtn");
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.documentElement.scrollTop = 0;
+}
+    </script>
+<div class="top-nav-bar">
+<div class="search-bar">
+<a href="index.html"><img src="logo.png" class="logo"></a>
+<input type="text" class="form-control" placeholder="Search Store..." style="font-style: italic">    
+<span class="input-group-text"><i class="fa fa-search" style="color: #9900FF;font-size: 20px;"></i></span>  
+    
+</div>
+<div class="menu">
+<ul>    
+<li><a href="#"><i class="fa fa-question-circle"></i></a></li>    
+<li><a href="#"><i class="fa fa-heart"></i></a></li>
+<li><a href="#"><i class="fa fa-user"></i></a>
+<div class="topsubmenu">
+<ul>
+<li><a href="login.html">Sign In</a></li>    
+<li><a href="signup.html">Create an Account</a></li>    
+</ul>    
+</div>    
+</li>  
+<li style="background-color: black"><a href="#"><i class="fa fa-shopping-cart" style="color: #9900FF"></i></a></li>  
+</ul>
+</div>    
+</div> 
+<!---------------------DEFAULT MENU------------------------------->
+<div class="menueasyclose">  
+    <div class="wrapper">
+        <nav id="sidemenubar">
+            <div id="close">
+                <i class="fa fa-arrow-left"></i>
+            </div>
+            <div class="sidemenubar-header">
+                <h3><a href="index.html">Imtiaz's <br>Website</a></h3>
+            </div>
+            <ul class="list-unstyled components">
+                <p>MENU</p>
+                <li class="active">
+                    <a href="#clothesSubmenu" data-toggle="collapse" aria-expanded="false">Clothing</a>
+                    <ul class="collapse list-unstyled" id="clothesSubmenu">
+                        <li>
+                            <a href="#">Tops</a>
+                        </li>
+                        <li>
+                            <a href="#">Hoodies</a>
+                        </li>
+                        <li>
+                            <a href="#">Cosplay</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#accSubmenu" data-toggle="collapse" aria-expanded="false">Accessories</a>
+                    <ul class="collapse list-unstyled" id="accSubmenu">
+                        <li>
+                            <a href="#">Rings</a>
+                        </li>
+                        <li>
+                            <a href="#">Bracelets</a>
+                        </li>
+                        <li>
+                            <a href="#">Necklaces</a>
+                        </li>                        
+                        <li>
+                            <a href="#">Keyrings</a>
+                        </li>                        
+                        <li>
+                            <a href="#">Hats</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#figuresSubmenu" data-toggle="collapse" aria-expanded="false">Figures</a>
+                    <ul class="collapse list-unstyled" id="figuresSubmenu">
+                        <li>
+                            <a href="#">Scale Figures</a>
+                        </li>
+                        <li>
+                            <a href="#">Plush</a>
+                        </li>
+                        <li>
+                            <a href="#">Chibi & mini figures</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#artSubmenu" data-toggle="collapse" aria-expanded="false">Art Prints</a>
+                    <ul class="collapse list-unstyled" id="artSubmenu">
+                        <li>
+                            <a href="#">Posters</a>
+                        </li>
+                        <li>
+                            <a href="#">Stickers</a>
+                        </li>
+                        <li>
+                            <a href="#">Pictures & canvases</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#bedSubmenu" data-toggle="collapse" aria-expanded="false">Bedding</a>
+                    <ul class="collapse list-unstyled" id="bedSubmenu">
+                        <li>
+                            <a href="#">Duvet Covers</a>
+                        </li>
+                        <li>
+                            <a href="#">Pillows</a>
+                        </li>
+                        <li>
+                            <a href="#">Sets</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#seriesSubmenu" data-toggle="collapse" aria-expanded="false">Series</a>
+                    <ul class="collapse list-unstyled" id="seriesSubmenu">
+                        <li>
+                            <a href="#">View All</a>
+                        </li>
+                        <li>
+                            <a href="#">Attack On Titan</a>
+                        </li>
+                        <li>
+                            <a href="#">Demon Slayer</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#otherSubmenu" data-toggle="collapse" aria-expanded="false">Other</a>
+                    <ul class="collapse list-unstyled" id="otherSubmenu">
+                        <li>
+                            <a href="#">Games</a>
+                        </li>
+                        <li>
+                            <a href="#">Bags</a>
+                        </li>
+                        <li>
+                            <a href="#">Mousepads</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a href="#saleSubmenu" data-toggle="collapse" aria-expanded="false">Sale</a>
+                    <ul class="collapse list-unstyled" id="saleSubmenu">
+                        <li>
+                            <a href="sale.html">View All</a>
+                        </li>
+                        <li>
+                            <a href="#">Clothes</a>
+                        </li>
+                        <li>
+                            <a href="#">Figures</a>
+                        </li>
+                    </ul>
+                </li> 
+                <img src="menu1.jpg" style="width: 248px; height: auto; margin-left: 1px;border-radius: 24px;border: 1px solid #fff;">               
+            </ul>
+        </nav>
+        <div id="content"> 
+            <nav class="navbar">
+                <div class="container" style="background-color: #9900FF;margin-top: 5px;margin-left: -30px;width:auto;height: auto;border-radius: 12px">
+                    <button type="button" id="sidemenubarCollapse" class="btn btn-info" style="background-color: #9900FF;border: none">
+                        <i class="fa fa-bars"></i>
+                        <span>Menu</span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="overlay"></div>
+    <script>
+        $(document).ready(function () {
+            $("#sidemenubar").mCustomScrollbar({
+                theme: "minimal"
+            });
+            $('#close, .overlay').on('click', function () {
+                $('#sidemenubar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+            $('#sidemenubarCollapse').on('click', function () {
+                $('#sidemenubar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>  
+</div>   
+<!----------------------------------------->
+	<nav class="product-filter">
+        <h1 style="font-weight:700;letter-spacing:-0.05em">BLACK CLOVER</h1>
+		<div class="sort">
+        <div class="collection-sort">
+        <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')">Show all</button>
+        <button class="btn" onclick="filterSelection('figures')">Figures</button>
+        <button class="btn" onclick="filterSelection('jewellery')">Jewellery</button>
+        <button class="btn" onclick="filterSelection('clothes')">Clothes</button> 
+        <button class="btn" onclick="filterSelection('school')">School</button>  
+        <button class="btn" onclick="filterSelection('hat')">Hats</button> 
+        <button class="btn" onclick="filterSelection('bed')">Bedding</button> 
+        <button class="btn" onclick="filterSelection('other')">Other</button>
+        </div>
+        </div>
+		</div>
+	</nav>
+<section class="products">
+<div class="row" style="width: auto; margin-left: 30px">
+<div class="filterDiv figures">
+<div class="product-card"> 
+<div class="product-image"> 
+<img src="bc1.png">
+</div>
+<div class="product-info">
+<h5>Asta Figure Version B</h5>
+<h6>£24.99</h6>
+</div>
+</div>
+</div>
+<div class="filterDiv figures">             
+<div class="product-card">   
+<div class="product-image">
+<img src="bc2.png">
+</div>
+<div class="product-info">
+<h5>Asta Figure Version A</h5>
+<h6>£24.99</h6>
+</div>
+</div>
+</div>
+<div class="filterDiv figures">
+<div class="product-card">
+<div class="product-image">
+<img src="bc3.png">
+</div>
+<div class="product-info">
+<h5>Asta Swords Figure</h5>
+<h6>£75.00</h6>
+</div>
+</div>
+</div>
+<div class="filterDiv clothes">
+<div class="product-card">
+<div class="product-image">
+<img src="bc4.png">
+</div>
+<div class="product-info">
+<h5>Black Asta T-shirt</h5>
+<h6>£6.50</h6>
+</div>
+</div>
+</div>
+<div class="filterDiv clothes">
+<div class="product-card">
+<div class="product-image">
+<img src="bc5.png">
+</div>
+<div class="product-info">
+<h5>Black Clover plain T-shirt</h5>
+<h6>£6.50</h6>
+</div>
+</div>
+</div>
+<div class="filterDiv clothes">		
+<div class="product-card">
+<div class="product-image">
+<img src="bc6.png">
+</div>
+<div class="product-info">
+<h5>Black Bulls T-shirt</h5>
+<h6>£6.50</h6>
+</div>
+</div>
+</div>
+<div class="filterDiv figures">		
+<div class="product-card">
+<div class="product-image">
+<img src="bc7.png">
+</div>
+<div class="product-info">
+<h5>Black Asta Plushie</h5>
+<h6>£18.50</h6>
+</div>
+</div>
+</div>
+<div class="filterDiv keyring figures">
+<div class="product-card">
+<div class="product-image">
+<img src="bc8.png">
+</div>
+<div class="product-info">
+<h5>Black Clover Keyrings</h5>
+<h6>£2.50</h6>
+</div>
+</div>
+</div>
+<div class="filterDiv school">		
+<div class="product-card">
+<div class="product-image">
+<img src="bc9.png">
+</div>
+<div class="product-info">
+<h5>Black Asta Bag</h5>
+<h6>£5.00</h6>
+</div>
+</div>
+</div>
+<div class="filterDiv clothes">		
+<div class="product-card">
+<div class="product-image">
+<img src="bc10.png">
+</div>
+<div class="product-info">
+<h5>Black Clover logo T-shirt</h5>
+<h6>£6.50</h6>
+</div>
+</div>
+</div>
+<div class="filterDiv school">		
+<div class="product-card">
+<div class="product-image">
+<img src="bc11.png">
+</div>
+<div class="product-info">
+<h5>Black Clover Bag</h5>
+<h6>£14.99</h6>
+</div>
+</div>
+</div>
+<div class="filterDiv hat">		
+<div class="product-card">
+<div class="product-image">
+<img src="bc12.png">
+</div>
+<div class="product-info">
+<h5>Rising Dawn Cap</h5>
+<h6>£6.00</h6>
+</div>
+</div>
+</div>
+<div class="filterDiv hat">		
+<div class="product-card">
+<div class="product-image">
+<img src="bc13.png">
+</div>
+<div class="product-info">
+<h5>Black Bulls Cap</h5>
+<h6>£6.00</h6>
+</div>
+</div>
+</div>
+<div class="filterDiv other">		
+<div class="product-card">
+<div class="product-image">
+<img src="bc14.png">
+</div>
+<div class="product-info">
+<h5>Black Bulls Dog Tag</h5>
+<h6>£2.50</h6>
+</div>
+</div>
+</div>
+<div class="filterDiv other">		
+<div class="product-card">
+<div class="product-image">
+<img src="bc15.png">
+</div>
+<div class="product-info">
+<h5>Black Clover lanyard</h5>
+<h6>£2.50</h6>
+</div>
+</div>
+</div>
+<div class="filterDiv other">		
+<div class="product-card">
+<div class="product-image">
+<img src="bc16.png">
+</div>
+<div class="product-info">
+<h5>Demon Slayer Sword Cosplay</h5>
+<h6>£20.00</h6>
+</div>
+</div>
+</div>
+<div class="filterDiv bed">		
+<div class="product-card">
+<div class="product-image">
+<img src="bc17.png">
+</div>
+<div class="product-info">
+<h5>Asta & Yuno Pillow</h5>
+<h6>£9.50</h6>
+</div>
+</div>
+</div>
+<div class="filterDiv bed">		
+<div class="product-card">
+<div class="product-image">
+<img src="bc18.png">
+</div>
+<div class="product-info">
+<h5>Black Asta Pillow </h5>
+<h6>£9.50</h6>
+</div>
+</div>
+</div>
+<div class="filterDiv bed">		
+<div class="product-card">
+<div class="product-image">
+<img src="bc19.png">
+</div>
+<div class="product-info">
+<h5>Black Clover Pillow</h5>
+<h6>£9.50</h6>
+</div>
+</div>
+</div>
+<div class="filterDiv bed">		
+<div class="product-card">
+<div class="product-image">
+<img src="bc20.png">
+</div>
+<div class="product-info">
+<h5>Black Asta Pillow</h5>
+<h6>£9.50</h6>
+</div>
+</div>
+</div>
+<div class="filterDiv jewellery">		
+<div class="product-card">
+<div class="product-image">
+<img src="bc21.png">
+</div>
+<div class="product-info">
+<h5>Black Clover Asta Pendant</h5>
+<h6>£12.50</h6>
+</div>
+</div>
+</div>
+<div class="filterDiv jewellery">		
+<div class="product-card">
+<div class="product-image">
+<img src="bc22.png">
+</div>
+<div class="product-info">
+<h5>Yuno Pendant</h5>
+<h6>£12.50</h6>
+</div>
+</div>
+</div>
+<div class="filterDiv clothes">		
+<div class="product-card">
+<div class="product-image">
+<img src="bc23.png">
+</div>
+<div class="product-info">
+<h5>Black Clover T-shirt</h5>
+<h6>£6.50</h6>
+</div>
+</div>
+</div>
+</div>
+</section>
+<style>
+h5 {
+font-weight: 500;
+font-size: 15px;
+line-height: 1.7em;
+color: black;
+}
+.product-info h6 {
+color: #666;
+font-size: 14px;
+}    
+</style>
+<!----------------------------------FOOTER------------------------>
+<section class="footer">
+    <div class="container tex-center">
+    <div class="row">
+    <div class="col-xl-4">
+    <h1>Useful Links</h1>
+    <p>Privacy Policy</p>
+    <p>Term of Use</p>
+    <p>Return Policy</p>
+    </div>
+    <div class="col-xl-4">
+    <h1>Company</h1>
+    <p>About Us</p>
+    <p>Contact us</p>
+    <p>Careers</p>
+    </div>
+    <div class="col-xl-4">
+    <h1>Follow Us On</h1>
+    <p><i class="fa fa-twitter"></i>Twitter</p>
+    <p><i class="fa fa-facebook-official"></i>Facebook</p>
+    <p><i class="fa fa-instagram"></i>Instagram</p>
+    </div>
+    </div>    
+    </div>
+</section>       
+	<script>
+	function openmenu()
+	{
+		document.getElementById("side-menu").style.display="block";
+		document.getElementById("menu-btn").style.display="none";
+		document.getElementById("close-btn").style.display="block";
+	}
+	function closemenu()
+	{
+		document.getElementById("side-menu").style.display="none";
+		document.getElementById("menu-btn").style.display="block";
+		document.getElementById("close-btn").style.display="none";	
+	}
+	</script>    
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>      
+    </body>
+</html>
